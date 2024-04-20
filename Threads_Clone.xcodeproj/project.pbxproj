@@ -11,6 +11,7 @@
 		F0B08A212BD33EE100DA0D3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B08A202BD33EE100DA0D3B /* ContentView.swift */; };
 		F0B08A232BD33EE300DA0D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B08A222BD33EE300DA0D3B /* Assets.xcassets */; };
 		F0B08A262BD33EE300DA0D3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B08A252BD33EE300DA0D3B /* Preview Assets.xcassets */; };
+		F0B08A372BD3402F00DA0D3B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B08A362BD3402F00DA0D3B /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F0B08A202BD33EE100DA0D3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F0B08A222BD33EE300DA0D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B08A252BD33EE300DA0D3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F0B08A362BD3402F00DA0D3B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,12 @@
 		F0B08A1D2BD33EE100DA0D3B /* Threads_Clone */ = {
 			isa = PBXGroup;
 			children = (
-				F0B08A1E2BD33EE100DA0D3B /* Threads_CloneApp.swift */,
-				F0B08A202BD33EE100DA0D3B /* ContentView.swift */,
+				F0B08A312BD33F2500DA0D3B /* App */,
+				F0B08A302BD33F2400DA0D3B /* Core */,
+				F0B08A2F2BD33F2200DA0D3B /* Extensions */,
+				F0B08A2E2BD33F1F00DA0D3B /* Model */,
+				F0B08A2C2BD33F0700DA0D3B /* Services */,
+				F0B08A322BD33F9200DA0D3B /* Utils */,
 				F0B08A222BD33EE300DA0D3B /* Assets.xcassets */,
 				F0B08A242BD33EE300DA0D3B /* Preview Content */,
 			);
@@ -65,6 +71,75 @@
 				F0B08A252BD33EE300DA0D3B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0B08A2C2BD33F0700DA0D3B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F0B08A2E2BD33F1F00DA0D3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0B08A2F2BD33F2200DA0D3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F0B08A302BD33F2400DA0D3B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F0B08A332BD33FCE00DA0D3B /* Authentication */,
+				F0B08A342BD33FDD00DA0D3B /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F0B08A312BD33F2500DA0D3B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F0B08A1E2BD33EE100DA0D3B /* Threads_CloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F0B08A322BD33F9200DA0D3B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F0B08A332BD33FCE00DA0D3B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F0B08A352BD3400400DA0D3B /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F0B08A342BD33FDD00DA0D3B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F0B08A202BD33EE100DA0D3B /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F0B08A352BD3400400DA0D3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0B08A362BD3402F00DA0D3B /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B08A372BD3402F00DA0D3B /* LoginView.swift in Sources */,
 				F0B08A212BD33EE100DA0D3B /* ContentView.swift in Sources */,
 				F0B08A1F2BD33EE100DA0D3B /* Threads_CloneApp.swift in Sources */,
 			);

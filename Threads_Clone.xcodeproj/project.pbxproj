@@ -12,6 +12,9 @@
 		F0B08A232BD33EE300DA0D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B08A222BD33EE300DA0D3B /* Assets.xcassets */; };
 		F0B08A262BD33EE300DA0D3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B08A252BD33EE300DA0D3B /* Preview Assets.xcassets */; };
 		F0B08A372BD3402F00DA0D3B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B08A362BD3402F00DA0D3B /* LoginView.swift */; };
+		F0B08A392BD3499F00DA0D3B /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B08A382BD3499F00DA0D3B /* RegistrationView.swift */; };
+		F0B08A3C2BD34BEC00DA0D3B /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B08A3B2BD34BEC00DA0D3B /* ThreadsTextFieldModifier.swift */; };
+		F0B08A3E2BD34F3300DA0D3B /* ThreadsButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B08A3D2BD34F3300DA0D3B /* ThreadsButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		F0B08A222BD33EE300DA0D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B08A252BD33EE300DA0D3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F0B08A362BD3402F00DA0D3B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F0B08A382BD3499F00DA0D3B /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F0B08A3B2BD34BEC00DA0D3B /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
+		F0B08A3D2BD34F3300DA0D3B /* ThreadsButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 		F0B08A322BD33F9200DA0D3B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F0B08A3A2BD34B9F00DA0D3B /* ViewModifiers */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -138,8 +145,18 @@
 			isa = PBXGroup;
 			children = (
 				F0B08A362BD3402F00DA0D3B /* LoginView.swift */,
+				F0B08A382BD3499F00DA0D3B /* RegistrationView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F0B08A3A2BD34B9F00DA0D3B /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F0B08A3B2BD34BEC00DA0D3B /* ThreadsTextFieldModifier.swift */,
+				F0B08A3D2BD34F3300DA0D3B /* ThreadsButtonModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B08A3E2BD34F3300DA0D3B /* ThreadsButtonModifier.swift in Sources */,
 				F0B08A372BD3402F00DA0D3B /* LoginView.swift in Sources */,
 				F0B08A212BD33EE100DA0D3B /* ContentView.swift in Sources */,
+				F0B08A3C2BD34BEC00DA0D3B /* ThreadsTextFieldModifier.swift in Sources */,
 				F0B08A1F2BD33EE100DA0D3B /* Threads_CloneApp.swift in Sources */,
+				F0B08A392BD3499F00DA0D3B /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

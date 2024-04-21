@@ -11,11 +11,7 @@ struct ThreadCell: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
-                Image("moniqs")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 50, height: 50)
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                CircularProfileImageView()
                 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
@@ -37,7 +33,7 @@ struct ThreadCell: View {
                         }
                     }
                     
-                    Text("Texto do thread aqui")
+                    Text("Thread vem aqui")
                         .font(.footnote)
                         .multilineTextAlignment(.leading)
                     

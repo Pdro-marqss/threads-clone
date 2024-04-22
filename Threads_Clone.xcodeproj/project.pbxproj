@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F00FEB4B2BD6B7670011B05B /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00FEB4A2BD6B7670011B05B /* ProfileThreadFilter.swift */; };
 		F0B08A1F2BD33EE100DA0D3B /* Threads_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B08A1E2BD33EE100DA0D3B /* Threads_CloneApp.swift */; };
 		F0B08A212BD33EE100DA0D3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B08A202BD33EE100DA0D3B /* ContentView.swift */; };
 		F0B08A232BD33EE300DA0D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B08A222BD33EE300DA0D3B /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F00FEB4A2BD6B7670011B05B /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 		F0B08A1B2BD33EE100DA0D3B /* Threads_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B08A1E2BD33EE100DA0D3B /* Threads_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threads_CloneApp.swift; sourceTree = "<group>"; };
 		F0B08A202BD33EE100DA0D3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F00FEB492BD6B74E0011B05B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F00FEB4A2BD6B7670011B05B /* ProfileThreadFilter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F0B08A122BD33EE000DA0D3B = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +270,7 @@
 		F0B08A522BD35AAE00DA0D3B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F00FEB492BD6B74E0011B05B /* Model */,
 				F0B08A532BD35ACC00DA0D3B /* View */,
 			);
 			path = Profile;
@@ -355,6 +366,7 @@
 				F0B08A512BD35A8D00DA0D3B /* ActivityView.swift in Sources */,
 				F0B08A4D2BD35A3D00DA0D3B /* CreateThreadView.swift in Sources */,
 				F0B08A452BD3593700DA0D3B /* FeedView.swift in Sources */,
+				F00FEB4B2BD6B7670011B05B /* ProfileThreadFilter.swift in Sources */,
 				F0B08A492BD359AE00DA0D3B /* ExploreView.swift in Sources */,
 				F0B08A552BD35AD600DA0D3B /* ProfileView.swift in Sources */,
 				F0B08A3E2BD34F3300DA0D3B /* ThreadsButtonModifier.swift in Sources */,

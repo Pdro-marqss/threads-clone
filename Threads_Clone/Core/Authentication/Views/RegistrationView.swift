@@ -8,65 +8,66 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    @State private var email = ""
-    @State private var password = ""
-    @State private var fullName = ""
-    @State private var username = ""
-    @Environment(\.dismiss) var dismiss
-    
-    var body: some View {
-        VStack {
-            Spacer()
+   @StateObject var viewModel = RegistrationViewModel()
+   @State private var email = ""
+   @State private var password = ""
+   @State private var fullName = ""
+   @State private var username = ""
+   @Environment(\.dismiss) var dismiss
+   
+   var body: some View {
+      VStack {
+         Spacer()
+         
+         Image("threads-logo")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 120, height: 120)
+            .padding()
+         
+         VStack {
+            TextField("Enter your email", text: $email)
+               .textInputAutocapitalization(.never)
+               .modifier(ThreadsTextFieldModifier())
             
-            Image("threads-logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 120, height: 120)
-                .padding()
+            SecureField("Enter your password", text: $password)
+               .modifier(ThreadsTextFieldModifier())
             
-            VStack {
-                TextField("Enter your email", text: $email)
-                    .textInputAutocapitalization(.never)
-                    .modifier(ThreadsTextFieldModifier())
-                
-                SecureField("Enter your password", text: $password)
-                    .modifier(ThreadsTextFieldModifier())
-                
-                TextField("Enter your full name", text: $fullName)
-                    .modifier(ThreadsTextFieldModifier())
-                
-                TextField("Enter your username", text: $username)
-                    .modifier(ThreadsTextFieldModifier())
+            TextField("Enter your full name", text: $fullName)
+               .modifier(ThreadsTextFieldModifier())
+            
+            TextField("Enter your username", text: $username)
+               .modifier(ThreadsTextFieldModifier())
+         }
+         
+         Button {
+            Task { try await viewModel.createUser() }
+         } label : {
+            Text("Sign Up")
+               .modifier(ThreadsButtonModifier())
+         }
+         .padding(.vertical)
+         
+         Spacer()
+         
+         Divider()
+         
+         Button {
+            dismiss()
+         } label: {
+            HStack(spacing: 3) {
+               Text("Already have an account?")
+               
+               Text("Sign In")
             }
-            
-            Button {
-                
-            } label : {
-                Text("Sign Up")
-                    .modifier(ThreadsButtonModifier())
-            }
-            .padding(.vertical)
-            
-            Spacer()
-            
-            Divider()
-            
-            Button {
-                dismiss()
-            } label: {
-                HStack(spacing: 3) {
-                    Text("Already have an account?")
-                    
-                    Text("Sign In")
-                }
-                .font(.footnote)
-                .foregroundStyle(.black)
-                .padding(.vertical, 16)
-            }
-        }
-    }
+            .font(.footnote)
+            .foregroundStyle(.black)
+            .padding(.vertical, 16)
+         }
+      }
+   }
 }
 
 #Preview {
-    RegistrationView()
+   RegistrationView()
 }
